@@ -1,7 +1,5 @@
-import React from "react";
+import { Client, Account, Databases, Storage, Avatars } from "appwrite";
 
-const config = () => {
-  return <div>config</div>;
+export const appwriteConfig = {
+  projectId: "65c379e094f71df6859b",
 };
-
-export default config;
