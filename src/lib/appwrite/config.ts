@@ -1,5 +1,12 @@
 import { Client, Account, Databases, Storage, Avatars } from "appwrite";
 
 export const appwriteConfig = {
-  projectId: "65c379e094f71df6859b",
+  projectId: import.meta.env.VITE_APPWRITE_PROJECT_ID,
 };
+
+export const client = new Client();
+
+export const account = new Account(client);
+export const databases = new Databases(client);
+export const storage = new Storage(client);
+export const avatars = new Avatars(client);
